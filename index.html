@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet Shop</title>
+    <style>  
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-weight:  bold;
+            color: white;
+        }
+        body{
+            font-family: "Montserrat Subrayada", sans-serif;
+           background-color: #2c2c2c;
+        }
+        header{
+            height: 70px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-bottom: 1px solid black;
+        }
+        ul{
+            display: flex;
+            list-style-type: none;
+        }
+        ul li a{
+            margin: 0 5px;
+            border: 2px solid white;
+            padding: 0px 10px;
+            text-decoration: none;
+            border-radius: 50px;
+        }
+        .logo{
+            border: 2px solid white;
+            padding: 10px 5px;
+        }
+        .signup{
+            background-color: white;
+            color: black;
+        }
+    .signup:hover{
+        background-color: black;
+        color: white;
+    }
+    main{
+        display: flex;
+        height: 90vh;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0px 150px;
+        flex-wrap: wrap;
+    }
+    main h2{
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+    main p{
+        font-size: 14px;
+        font-weight: 200;
+        line-height: 31.5px;
+        margin: 30px 0px ;
+    }
+    .btn:hover{
+        background-color: #2c2c2c;
+        color: white;
+        border: 2px solid white;
+    }
+    .contentleft{
+        flex: 1
+    }
+    .contentmid{
+        flex: 2
+    }
+    .contentright{
+        flex: 1
+    }
+    .merc{
+       max-width: 500px;
+       height: 200px;
+       padding-left: 30%;
+       mix-blend-mode:color-dodge;
+    }
+    .btn{
+        padding: 15px 30px;
+        background: white;
+        outline: none;
+        border: none;
+        color: black;
+        border-radius: 50px;
+        font-weight: 700;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div  class="logo">Logo</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Offers</a></li>
+                <li><a href="#">Buy Now</a></li>
+                <li><a href="#">Sell Now</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#" class="signup">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+       
+        <div class="contentleft">
+            <h2>Mercury</h2>
+        </div>
+        <div class="contentmid">
+            <p>Mercury is the first planet from the Sun and the smallest in the Solar System.
+                 In English, it is named after the ancient Roman god Mercurius, god of commerce and communication,
+                  and the messenger of the gods.Mercury's sidereal year (88.0 Earth days) and sidereal day (58.65 Earth days) are in a 3:2 ratio. 
+                  This relationship is called spin–orbit resonance, and sidereal here means "relative to the stars".
+                   Consequently, one solar day (sunrise to sunrise) on Mercury lasts for around 176 Earth days: twice the planet's sidereal year. 
+                   This means that one side of Mercury will remain in sunlight for one Mercurian year of 88 Earth days; while during the next orbit,
+                   that side will be in darkness all the time until the next sunrise after another 88 Earth days.</p>
+
+               <button class="btn">Buy now</button>    
+        </div>
+        <div class="contentright">
+           <img src="data:image/jpeg;base64,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" class="merc" alt="">
+        </div>
+
+    </main>
+</body>
+</html>
